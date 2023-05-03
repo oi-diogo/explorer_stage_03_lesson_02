@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title-font-family: 'Staatliches';
+    --paragraph-font-family: 'Palanquin';
+
+    --dark-blue: #4A4E69;
+    --dark-gray: #8E9AAF;
+    --opaque-lilac: #CBC0D3;
+    --light-pink: #FEEAFA;
+    --light-gray: #EFF1FF;
+}
