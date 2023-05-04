@@ -83,8 +83,10 @@ main {
 
 #paragraph-style p {
     font-family: var(--paragraph-font-family);
-    font-size: var(--paragraph-font-size);
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+
+    text-align: center;
 
     color: #23053A;
 }
@@ -94,10 +96,15 @@ main {
 }
 
 .img-wrapper p {
+    width: 11.2rem;
+    height: 3.5rem;
+
+
     position: absolute;
     font-size: var(--paragraph-font-size);
     line-height: 3.4rem;
     letter-spacing: 0.05em;
+    text-align: center;
 
     margin-top: 1.7rem;
     margin-left: 19rem;
