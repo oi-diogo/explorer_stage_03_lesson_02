@@ -2,11 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: var(--title-font-family);
 }
 
 :root {
-    --title-font-family: 'Staatliches';
-    --paragraph-font-family: 'Palanquin';
+    --title-font-family: 'Staatliches', 'sans-serif';
+    --paragraph-font-family: 'Palanquin', 'sans-serif';
+
+    font-size: 62.5%;
+    --title-font-size: 4.0rem;
+    --paragraph-font-size: 2.0rem;
 
     --dark-blue: #4A4E69;
     --dark-gray: #8E9AAF;
@@ -14,3 +20,94 @@
     --light-pink: #FEEAFA;
     --light-gray: #EFF1FF;
 }
+
+h1 {
+    font-size: var(--title-font-size);
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+
+    color: white;
+
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+
+    height: 28rem;
+    margin-bottom: 5rem;
+}
+
+#brand-bg {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0.8rem;
+    text-align: center;
+    background-color: var(--opaque-lilac);
+}
+
+body {
+    background-color: var(--light-pink);
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 28.0rem;
+    margin-bottom: 3.0rem;
+
+    left: 0;
+    top: 0;
+
+    position: absolute;
+    z-index: -1;
+
+    background-color: var(--dark-gray);
+}
+
+main {
+    width: 32rem;
+    margin: 1.4rem auto 6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.6rem;
+
+}
+
+#paragraph-style p {
+    font-family: var(--paragraph-font-family);
+    font-size: var(--paragraph-font-size);
+    line-height: 2rem;
+
+    color: #23053A;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-wrapper p {
+    position: absolute;
+    font-size: var(--paragraph-font-size);
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+
+    margin-top: 1.7rem;
+    margin-left: 19rem;
+
+    text-transform: uppercase;
+
+    color: var(--dark-blue);
+
+    background: var(--light-pink);
+    border-radius: 20px;
+}
+
+.img-wrapper img {}
